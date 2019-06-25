@@ -1,0 +1,182 @@
+// Write your styles here
+
+/*@mixin mainImg($img) {
+    //color: $color;
+    background: $img;
+    //width: 450px;
+}
+*/
+
+@mixin button($value) {
+    padding: $value;
+}
+
+%header-heading {
+    font-size: 55px;
+    font-weight: bold;
+    width: 520px;
+    margin: 40px 0;
+    font-family: Arial;
+}
+
+body {
+    background-color: $body_backround_color;
+    
+   }
+
+.header {
+    background-image: $background-image;
+       height: 700px;
+       background-size: cover;
+       background-position: center;
+       border-radius: 0 0 400px 0;
+       color: $header_color;
+   
+   .header-wrap {
+    padding: 30px 150px;
+   }
+   .header_heading {
+    @extend %header-heading;
+   
+   }
+   .header_text {
+    white-space: pre;
+    margin-left: -35px;
+    line-height: 1.5;
+}
+.header_button {
+
+    @include button(10px 40px);
+    background-color: $button_background_color;
+    border: 1px solid $button_background_color;
+    color: white;
+    margin-top: 20px;
+}
+
+}
+   .landing-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+        margin-right: 10px;
+       }
+    p  {
+        font-weight: bold;
+        font-size: 25px;
+           font-family: Arial;
+           text-align: center;
+           line-height: 1.4;
+        }
+        span {
+            display: block;
+            font-size: 10px;
+            }
+   }
+   
+   .section_text {
+       text-align: center;
+       padding-top: 20px;
+       font-size: 30px;
+       color: $header_color;
+   }
+
+   .section_card_wrap{
+     display: flex;
+     justify-content: center;
+
+     .section_card {
+        width: 20%;
+        margin-right: 20px;
+        background-color: $section_card_color;
+        color: white;
+        text-align: center;
+        border-radius: 2%;
+      }
+      .section_card_heading {
+        font-size: 20px; 
+        width: fit-content;
+        text-align: center;
+        margin: 0 auto;
+        border-bottom: 10px solid $section_card_heading_color;
+            line-height: 0.3;
+        }
+      .section_card_text {
+            font-size: 12px;
+            padding: 0px 15px;
+          }
+          img.section_card_img {
+            width: 90%;
+            margin: 15px;
+            border-radius: 2%;
+          }
+
+   }
+   
+   
+.section_banner {
+    width: 50%;
+       background: linear-gradient(to right, $section_banner_gradient_1, $section_banner_gradient_2);
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       right: 20px;
+       position: relative;
+       z-index: 2;
+       margin: 90px auto -40px;
+
+       .section_banner_text_wrap {
+        padding: 20px;
+       }
+       .section_banner_heading {
+        font-family: arial;
+           font-size: 25px;
+           font-weight: bold;
+           margin: 0;
+           color: $header_color;
+       }
+
+       .section_banner_button {
+        @include button(10px 40px);
+           background-color: $button_background_color;
+           border: 1px solid $button_background_color;
+           color: white;
+       }
+       .section_banner_text {
+        color: white;
+       }
+
+   }
+   
+   
+   footer.footer {
+    background-color: $footer_background_color;
+       color: white;
+       position: relative;
+       z-index: 1;
+
+   .footer-wrap {
+    display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-top: 50px;
+   }
+       .footer_text {
+    width: 25%;
+   }
+   }
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
