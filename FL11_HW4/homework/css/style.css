@@ -1,0 +1,266 @@
+body{
+	margin: 0;
+	padding: 0;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+
+header {
+    background-image: url("../img/sample2.jpg");
+    height: 750px;
+    background-size: cover;}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    }
+.header a{
+    color: #FFFFFF; 
+    text-decoration: none;
+    }
+    .header a {
+        margin-right: 20px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+        color: #FFFFFF;
+        margin-top: 160px;
+    }
+    header p {
+        text-align: center;
+        color: #E8E8E8;
+    }
+    .header-buttons {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .header-buttons a {
+        border: 2px solid white;
+        padding: 10px 60px;
+        color: white;
+        text-decoration: none;
+        margin-top: 190px;
+    }
+    .main-text-to {
+        display: flex;
+        justify-content: space-around;
+        height: 200px;
+        background: linear-gradient(7deg, #f3f2f2 50%, black 50%);
+
+    }
+    .main-text-to p {
+        width: 45%;
+    }
+    .main-text-to p:first-child {
+        font-size: 20px;
+        align-self: flex-end;
+       }
+       .main-text-to p:last-child {
+        color: white;
+        }
+        main {
+            background-color: #f3f2f2;
+           }
+           h2 {
+               text-align: center;
+           }
+           h2 span {
+               font-weight: 100;
+           }
+           
+
+
+           .main-text-blocks {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 35px 60px;
+        }
+        .main-text-blocks>div {
+            width: 50%;
+        }
+        
+        .img-block {
+            display: flex;
+            justify-content: space-between;
+            color: #FFFFFF;
+            font-size: 21px;
+        }
+        .img-block p {
+            align-self: flex-end;
+            margin: 25px;
+        }
+        .img-block div {
+            align-self: flex-start;
+            background-color: rgba(13, 13, 13, 0.4);
+            border: 2px solid #FFFFFF;
+            text-align: center;
+            padding: 5px 20px;
+            margin: 25px;
+        }
+        
+        .img-block:first-child {
+            background-image: url(../img/sample-1.jpg);
+            background-size: cover;
+            height: 400px;
+            margin-bottom: 10px;
+        }
+        .img-block:last-child {
+            background-image: url(../img/sample-2.jpg);
+            background-size: cover;
+            height: 400px;
+        }
+        .text-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            text-align: center;
+        }
+        
+        .text-block.first  p {`
+        padding-left: 60px;
+        }
+        .text-block.second p  {
+        padding-right: 60px;
+        }
+        
+        .img-bloks-second {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            background-color: #FFFFFF;
+            }
+        
+        .small-bloks {
+        width: 20%;
+        }
+        
+        .small-bloks:first-child {
+        background-image: url(../img/news-list-1.jpg);
+            background-size: cover;
+            height: 400px;
+        }
+        .small-bloks:nth-child(2) {
+        background-image: url(../img/news-list-2.jpg);
+            background-size: cover;
+            height: 400px;
+        }
+        .small-bloks:nth-child(3) {
+        background-image: url(../img/news-list-3.jpg);
+            background-size: cover;
+            height: 400px;
+        }
+        .small-bloks:nth-child(4) {
+        background-image: url(../img/news-list-4.jpg);
+            background-size: cover;
+            height: 400px;
+        }
+        .small-bloks {
+            display: flex;
+            justify-content: space-between;
+            color: #FFFFFF;
+            font-size: 21px;
+            flex-direction: column-reverse;
+        }
+        
+        .small-bloks p {
+            align-self: flex-start;
+            margin: 25px;
+        }
+        .small-bloks p span {
+            font-weight: 100;
+        }
+        .small-bloks div {
+            align-self: flex-end;
+            background-color: rgba(13, 13, 13, 0.4);
+            border: 2px solid #FFFFFF;
+            text-align: center;
+            padding: 5px 10px;
+            margin: 25px;
+        }
+        .small-bloks div.center-text {
+            align-self: center;
+            font-weight: bold;
+            background-color: rgba(3, 128, 117, 0.7);
+            border: none;
+            width: 70%;
+        }
+        .center-text a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        .button-block {
+            background-color: #FFFFFF;
+            text-align: center;
+            padding: 30px;
+        }
+        .button-block button {
+            border: none;
+            padding: 15px 120px;
+            background-color:  #097774;
+            color: #FFFFFF;
+            font-size: 20px;
+        }
+        
+        .form {
+            padding: 40px;
+        }
+        
+        
+        .form-email {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 18px;
+        }
+        
+        .form-email p {
+        font-size: 25px;
+        }
+        
+        .form-email input {
+        border: 1px solid #000000;
+        margin-left: 15px;
+        padding: 10px;
+        color: #000000;
+        font-size: 16px;
+        }
+        .form-email button {
+            margin-left: 15px;
+            color: #FFFFFF;
+            padding: 10px;
+             background-color: #097774;
+             border: none;
+             font-size: 16px;
+        }
+        .form-email span {
+        font-weight: bolder;
+        }
+        
+        footer {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+        }
+        footer p{
+            color: #9E9E9E;
+        }
+        footer div {
+            padding: 20px;
+        
+        }
+        footer div a {
+            text-decoration: none;
+            color: #000000;
+            margin-left: 35px;
+        }
+         
+        
+        
+        
+        
+        
