@@ -1,0 +1,332 @@
+
+:root {
+  --bg-color--dark: #0b192f;
+  --bg-color--header: #162b4d;
+  --link: #fff;
+  --link--hover: #b8b8b8;
+  --bg-footer-color: #162b4d;
+}
+
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+body {
+  background-color: #0b192f;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  align-items: center;
+  color: #fff;
+  background-color: #162b4d;
+}
+
+header span {
+  color: red;
+}
+
+header p {
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.gamburger {
+	display: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu a {
+margin-right: 30px;
+  text-decoration: none;
+color: white;
+}
+.menu a:hover {
+opacity: 0.5;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 76%;
+  color: white;
+}
+
+nav {display: flex;
+  flex-direction: column;
+  width: 23%;
+  color: black;
+}
+
+.sidebar {
+  height: auto;
+  background-color: #fff;
+  margin-bottom: 14px;
+}
+.sidebar img {
+  width: 100%;
+}
+.sidebar p {
+  font-size: 18px;
+  font-weight: 100;
+}
+.sidebar h3 {
+   font-weight: 300;
+  font-size: 25px; 
+  margin: 0;
+}
+.sidebar div {
+  padding: 35px;
+}
+
+.main img {
+  width: 50%;
+  height: 340px;
+}
+
+.main img {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.main img:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+.main img:first-child {
+  height: 400px;
+}
+
+.blok-text {
+   width: 50%;
+  position: relative;
+}
+.blok-text:last-child {
+  width: 100%;
+  height: 200px;
+}
+
+.blok-text:hover {
+opacity: 0.5;
+}
+
+.text-inside {
+  padding: 35px;
+  width: 70%;
+  text-align: left;
+  position: relative;
+}
+
+.post-2 .text-inside, .post-4 .text-inside {
+  text-align: right;
+  margin-right: 0;
+  padding: 30px 40px;
+  width: 83%;
+} 
+
+.post-5 .text-inside {
+ width: 83%;
+}
+
+ .main h2 {
+  font-weight: 100;
+    font-size: 40px;
+    margin: 10px 0;
+  }
+
+   .main p {
+  font-weight: 100;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5;
+  }
+
+  .main p.date {
+  position: absolute;
+  top: 10px;
+  right: 13px;
+  font-size: 27px;
+  opacity: 0.3;
+}
+
+.date span {
+  font-size: 43px;
+}
+
+ .post-2 p.date,  .post-4 p.date {
+  top: 10px;
+  left: 13px;
+}
+
+  footer {
+    background-color: #162b4d;
+    display: flex;
+    justify-content: space-between;
+    color: #ebeaea;
+    padding: 25px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+
+@media screen and (max-width: 480px) {
+
+main {
+	flex-direction: column;
+}
+main .main {
+	width: 100%!important;
+}
+
+main nav {
+	width: 100%!important;
+}
+}
+
+@media screen and (max-width: 768px) {
+.menu {
+	display: none;
+}
+header {
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	padding: 10px 20px;
+}
+
+header p {
+	margin: 10px;
+}
+
+.gamburger {
+	display: block;
+}
+.main {
+	flex-direction: column;
+}
+.main img {
+	width: 100%;
+}
+.blok-text {
+	width: 100%;
+}
+.main {
+	width: 60%;
+}
+
+nav {
+	width: 38%;
+}
+
+.blok-text {
+	height: 335px!important;
+}
+
+.text-inside  {
+padding: 20px!important;
+width: auto!important;
+text-align: left!important;
+font-size: 14px;
+}
+.main p {
+	font-size: 14px;
+}
+
+
+.sidebar p {
+	font-size: 14px;
+	line-height: 1.5;
+}
+.main h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.main p.date {
+	bottom: 10px!important;
+	top: 224px;
+	left: 43%;
+}
+
+.sidebar div {
+    padding: 20px;
+    font-size: 14px;
+}
+
+.post-1 {
+	order: 2;
+} 
+.post-2 {
+	order: 4;
+} 
+.post-3 {
+	order: 6;
+} 
+.post-4 {
+	order: 8;
+} 
+.post-5 {
+	order: 9;
+} 
+.img-1 {
+	order: 1;
+}
+.img-2 {
+	order: 3;
+}
+.img-3 {
+	order: 5;
+}
+.img-4 {
+	order: 7;
+}
+
+footer {
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+footer p {
+	margin: 0;
+}
+}
