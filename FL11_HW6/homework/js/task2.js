@@ -8,7 +8,7 @@ if(a <= 0 || b <= 0 || c <= 0) {
 } else if (a === b && b === c && c === a) {
 console.log('Eequivalent triangle');
 } else if (a === b || b === c || c === a) {
-    console.log('Isosceles triangle!!!');
+    console.log('Isosceles triangle');
 } else {
     console.log('Normal triangle');
 }
